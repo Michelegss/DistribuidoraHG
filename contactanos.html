@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DGH Distribuidora Hermanos García - <contactanos class="php"></contactanos></title>
+    <link rel="stylesheet" href="CSS/contactanoscss.css">
+   
+<body>
+    <header>
+        <div class="contenedor contenido-encabezado">
+            <div class="logo">
+            <img src="images2/Logo DGH.jpg" alt="Logo DGH" class="logo-circular">
+            <div class="texto-logo">Distribuidora Hermanos García</div>
+        </div>
+        
+
+            <!-- MENÚ -->
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="productos.html">Productos</a></li>
+                    <li><a href="contactanos.html">Contáctanos</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+  
+<div id="boton-menu" onclick="abrirMenu()" >☰</div>
+<div id="menu-lateral">
+    <a href="javascript:void(0)" class="cerrar" onclick="cerrarMenu()">×</a>
+    <h3>Menú</h3>
+    <a href="productos.html">📦&nbsp;Productos</a>
+    <a href="index.html">🏢&nbsp;DHG</a>
+    <h3>Opciones </h3>
+    <a href="#" class="link-vinieta">Direccion</a>
+    <a href="#" class="link-vinieta"> Eimal</a>
+    <a href="#" class="link-vinieta"> Telefonos</a>
+    <a href="#" class="link-vinieta"> Horarios</a>
+</div>
+<div id="fondo-menu" onclick="cerrarMenu()"></div>
+
+
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="contenedor">
+            <h1>Contáctanos</h1>
+            <p>Estamos aquí para ayudarte. Ponte en contacto con nosotros para cualquier consulta o pedido.</p>
+        </div>
+    </section>
+
+    
+    <section class="contacto">
+        <div class="contenedor">
+            <h2 class="titulo-seccion">Ponte en Contacto</h2>
+            <div class="contenido-contacto">
+                
+                <div class="informacion-contacto">
+                    <h3>Información de Contacto</h3>
+                    <div class="detalle-contacto">
+                        <div class="icono-contacto">📍</div>
+                        <div>
+                            <strong>Dirección:</strong><br>Av. Textil 123, Ciudad
+                        </div>
+                    </div>
+                    <div class="detalle-contacto">
+                        <div class="icono-contacto">📞</div>
+                        <div>
+                            <strong>Teléfono:</strong><br>(502) 4701-8208
+                        </div>
+                    </div>
+                    <div class="detalle-contacto">
+                        <div class="icono-contacto">✉️</div>
+                        <div>
+                            <strong>Email:</strong><br>info@dghdistribuidora.com
+                        </div>
+                    </div>
+                    <div class="detalle-contacto">
+                        <div class="icono-contacto">🕒</div>
+                        <div>
+                            <strong>Horario:</strong><br>Lunes a Viernes: 9:00 - 18:00<br>Sábados: 9:00 - 14:00
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div class="formulario-contacto">
+                    <h3>Envíanos un mensaje</h3>
+                    <form method="post" action="php/contactanos.php" >
+                        <div class="grupo-formulario">
+                            <label for="nombre">Nombre:</label>
+                            <input type="text" id="nombre" required name="nam">
+                        </div> 
+                        <div class="grupo-formulario">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" required name="mail">
+                        </div>
+                        <div class="grupo-formulario">
+                            <label for="asunto">Asunto:</label>
+                            <select id="asunto" name="affair">
+                                <option value="consulta">Consulta</option>
+                                <option value="pedido">Pedido</option>
+                                <option value="soporte">Soporte</option>
+                                <option value="otros">Otros</option>
+                            </select>
+                        </div>
+                        <div class="grupo-formulario">
+                            <label for="mensaje">Mensaje:</label>
+                            <textarea id="mensaje" required name="msg"></textarea>
+                        </div>
+                        <button type="submit" class="boton-enviar">Enviar Mensaje</button>
+                    </form>
+                </div>
+            </div>
+
+            
+            <div class="mapa">
+                <h3 style="text-align:center; margin-bottom:20px; color:#1E3A8A;">Nuestra Ubicación</h3>
+                <div class="mapa-placeholder"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d743.9138592390744!2d-68.66826503289614!3d18.831186273752092!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8ea8c59af47dd65f%3A0xcdc984ded3bc76dd!2sDistribuidora%20Hermanos%20Garc%C3%ADa!5e0!3m2!1ses-419!2sgt!4v1764201678314!5m2!1ses-419!2sgt" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+            </div>
+        </div>
+    </section>
+
+
+    
+    <footer>
+        <div class="contenedor contenido-pie">
+            <p>&copy; 2023 DGH Distribuidora Hermanos García. Todos los derechos reservados.</p>
+            <div class="enlaces-sociales">
+                <a href="#">Facebook</a>
+                <a href="#">Instagram</a>
+                <a href="#">WhatsApp</a>
+            </div>
+        </div>
+    </footer>
+    <script src="JS/00-menu.js"></script>
+</body>
+</html>

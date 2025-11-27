@@ -1,0 +1,1106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DGH Distribuidora Hermanos García - Productos</title>
+    <link rel="stylesheet" href="CSS/productoscss.css">
+
+<body>
+    <header>
+        <div class="contenedor contenido-encabezado">
+            <div class="logo">
+            <img src="images2/Logo DGH.jpg" alt="Logo DGH" class="logo-circular">
+            <div class="texto-logo">Distribuidora Hermanos García</div>
+            </div>
+        
+            <div id="boton-menu" onclick="abrirMenu()" >☰</div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="productos.html">Productos</a></li>
+                    <li><a href="contactanos.html">Contáctanos</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+            
+        <div id="menu-lateral">
+            <a href="javascript:void(0)" class="cerrar" onclick="cerrarMenu()">×</a>
+            <h3>Menú</h3>
+            <a href="index.html">🏢&nbsp;DGH</a>
+            <a href="contactanos.html">☎️&nbsp;Contáctanos</a>
+            <h3>Todos los productos</h3>
+            <a href="#" onclick="buscarDesdeMenu('tela')">Agujas y accesorios de costura</a>
+            <a href="#" onclick="buscarDesdeMenu('lana')">Crochet</a>
+            <a href="#" onclick="buscarDesdeMenu('hilo')">Herramientas de Costuras</a>
+            <a href="#" onclick="buscarDesdeMenu('ovillo')">Insumos Textiles</a>
+            <a href="#" onclick="buscarDesdeMenu('aguja')">Estambres e Hilos</a>
+            <a href="#" onclick="buscarDesdeMenu('accesorio')">Refacciones para maquina de coser</a>
+            <a href="#" onclick="buscarDesdeMenu('accesorio')">Material para manualidades</a>
+        </div>
+        <div id="fondo-menu" onclick="cerrarMenu()"></div>
+
+        <section class="seccion-hero">
+            <div class="">
+                <h1>Nuestros Productos</h1>
+                <p>Descubre nuestra amplia gama de telas, lanas y artículos textiles de la más alta calidad</p>
+            </div>
+        </section>
+
+
+        <section class="categorias">
+            <div>
+                <h2 class="titulo-seccion">Mercaderías</h2>
+                <form id="search-form" class="search-container">
+                        <input type="text" id="filtro" oninput="filtrar()" placeholder="Buscar...">
+                        <h2>|</h2>
+                        <select class="kindele"   id="categoria" onchange="filtrar()">
+                            <option value="todas">Todos</option>
+                            <option value="hola">Agujas y accesorios de costuras </option>
+                            <option value="hola2">Crochet</option>
+                            <option value="hola3">Herramientas de costura</option>
+                            <option value="hola4">Insumos textiles</option>
+                            <option value="hola5">Estambre e hilos </option>
+                            <option value="hola6">Refacciones para maquina de coser</option>
+                            <option value="hola7">Material para manualidades</option>
+                        </select>
+                        <select class="cosprice" id="precio" onchange="filtrar()">
+                            <option value="default">Precio</option>
+                            <option value="asc">Menor a mayor</option>
+                            <option value="desc">Mayor a menor</option>
+                        </select>
+                </form>
+
+
+                <br><br><br>
+                <div id="productos" class="lista-productos">
+
+                    <div class="tarjeta-producto" id="producto0" data-categoria="hola, hola3" data-precio="18.50">
+                        <div class="imagen-producto" >
+                            <div class="img-shadow"><img src="images/aguja apple/aguja-apple-caja.jpg"></div>
+                        </div>
+                        <div class="info-producto">
+                            <h3 class="titulo">Aguja Apple</h3>
+                            <p>Aguja para maquina de coser. dispobible en varios numeros depedniendo del Tipo de tela que necesite coser.
+                                venta minima: 1 caja por numero</p>
+                        </div>
+                        </div>
+
+
+                    <div class="tarjeta-producto" id="producto1" data-categoria="hola, hola3" data-precio="40.50"> 
+                        <div class="imagen-producto">
+                            <div class="img-shadow"><img src="images/aguja chaquira pony/aguja-chaquira-pony-no-10.jpg"></div>
+                        </div>
+                        <div class="info-producto">
+                            <h3 class="titulo">Aguja chaquira pony</h3>
+                            <p> Agujas finas,ideal para morticillla y trabajos con bisutería. Caja con un 1 millar de agujas 40 sobres. VEnta minima 5millares</p>
+                        </div>
+                    </div>
+
+                    <div class="tarjeta-producto" id="producto2" data-categoria="hola, hola3" data-precio="25.5"> 
+                        <div class="imagen-producto">
+                            <div class="img-shadow"><img src="images/aguja circular/aguja-circular.jpg"></div>
+                        </div>
+                        <div class="info-producto">
+                            <h3 class="titulo"> Aguja circular</h3>
+                            <p>Ideal para realizar tejidos. bolsas con 12 estuches. Medidas Disponibles: 2.5mm/3mm
+                            /4mm/4.5mm/5mm/
+                            6mm/7mm. Venta minima: 12 estuches</p>
+                        </div>
+                    </div>
+
+                    <div class="tarjeta-producto" id="producto3" data-categoria="hola, hola2, hola3" data-precio="50"> 
+                        <div class="imagen-producto">
+                            <div class="img-shadow"><img src="images/aguja crochet/aguja-crochet-bolsa.jpg"></div>
+                        </div>
+                        <div class="info-producto">
+                            <h3 class="titulo">Aguja crochet</h3>
+                            <p>Ideal para realizar tejidos de diferentes prendas o manualidades. precentacion: bolsas cin 12pzs. numeros: 0,2,4,6,8 y 10. Venta minima 10 docenas por numero<p>
+                        </div>
+                    </div>
+
+                    <div class="tarjeta-producto" id="producto4" data-categoria="hola, hola3" data-precio="18.50"> 
+                        <div class="imagen-producto">
+                            <div class="img-shadow"><img src="images/aguja singer blister de 10/caja-de-aguja-singer-blister-de-10.jpg">
+                            </div>
+                        </div>
+                        <div class="info-producto">
+                            <h3 class="titulo">Aguja singer</h3>
+                            <p>Aguja para maquinad de coser, cabo dorado de Exenlente calidad. Precentacion caja con 150 blister.Numeros.10,12,14,16,18 y 21. Venta Minima: 1 Caja</p>
+                        </div>
+                    </div>
+
+                    <div class="tarjeta-producto" id="producto8" data-categoria="hola2, hola4, hola7" data-precio="15"> 
+                        <div class="imagen-producto">
+                            <div class="img-shadow"><img src="images/Elastico trenzado Negro/Rollos-de-elastico-trenzado-negro.jpg"></div>
+                        </div>
+                        <div class="info-producto">
+                            <h3 class="titulo">ELastico trensado negro</h3>
+                            <p>Elastico trenzado de excenlente calidad utilizada ampliadamente en la costura y confeccion.Rollos con 100 yadas.Tamaños 5mm,6mm,8mm,10mm y 12mm.venta minima 50 Rollos</p>
+                        </div>
+                    </div>
+
+
+                    <div class="tarjeta-producto" id="producto11" data-categoria="hola3, hola6" data-precio="100"> 
+                        <div class="imagen-producto">
+                            <div class="img-shadow"><img src="images/motor/motor-para-maquina-de-coser.jpg"></div>
+                        </div>
+                        <div class="info-producto">
+                            <h3 class="titulo">Motor </h3>
+                            <p>El set incluye: motor,pedal y accesorios. Especificaciones 110volts, 130w, 8,000 rmp. venta minima 10 cajitas</p>
+                        </div>
+                    </div>
+
+                    <div class="tarjeta-producto" id="producto12" data-categoria="hola4, hola7" data-precio="18"> 
+                        <div class="imagen-producto">
+                            <div class="img-shadow"><img src="images2/Rafia toyo/rafia-toyo-negro-no18.jpg"></div>
+                        </div>
+                        <div class="info-producto">
+                            <h3 class="titulo">Rafia toyo</h3>
+                            <p>Utilizada en  trabajos  de manualidades y decorativos con diferentes colores. Venta minima 100 ovillos por color </p>
+                        </div>
+                    </div>
+
+                    <div class="tarjeta-producto" id="product13" data-categoria="hola2, hola3, hola4, hola7" data-precio="40"> 
+                        <div class="imagen-producto">
+                            <div class="img-shadow"><img src="images2/set crochet plastico/juego-de-gancho-crochet-plastico-2.jpg"></div>
+                        </div>
+                        <div class="info-producto">
+                            <h3 class="titulo"> Set crochet de plastico</h3>
+                            <p>Ideal para realizar tejidos y manualidades. Incluye 7 agujas de diferentes tamaños. 3.0mm,4.0mm, 5..0mm </p>
+                        </div>
+                    </div>
+
+                    <div class="tarjeta-producto" id="producto14" data-categoria="hola3, hola7" data-precio="80"> 
+                        <div class="imagen-producto">
+                            <div class="img-shadow"><img src="images2/tijeras mundial/tijera-mundial-caja.jpg"></div>
+                        </div>
+                        <div class="info-producto">
+                            <h3 class="titulo"> Tijera mundial</h3>
+                            <p>Tijera para sastre y modista de excenlente calidad garantizada un corte perfecto. tamaños 8,9 y 10. venta minima 12unidades</p>
+                        </div>
+                    </div>
+
+                    <div class="tarjeta-producto" id="producto15" data-categoria="hola4, hola7" data-precio="150"> 
+                        <div class="imagen-producto">
+                            <div class="img-shadow"><img src="images2/tul diamantina/tul-con-diamantina-blanco-rollo.jpg"></div>
+                        </div>
+                        <div class="info-producto">
+                            <h3 class="titulo">Tul con Diamantina</h3>
+                            <p>Ideal para la elaboracion de vestidos y manualidades. Rollos con 50mts y un ancho de 1.4 metros.</p>
+                        </div>
+                    </div>
+
+                    <div class="tarjeta-producto" id="producto16" data-categoria="hola4, hola7, hola" data-precio="100"> 
+                        <div class="imagen-producto">
+                            <div class="img-shadow"><img src="images2/tul doble ancho/tul-doble-ancho-blanco.jpg"></div>
+                        </div>
+                        <div class="info-producto">
+                            <h3 class="titulo"> Tul doble Ancho</h3>
+                            <p>Tul con acabado firme, gracias a sus caracteristicas es un producto con gran variedad de aplicaciones. almohadas con 50mts con un ancho de 2.8metros.</p>
+                        </div>
+                    </div>
+
+                    <div class="tarjeta-producto" id="producto17" data-categoria="hola3, hola4, hola7" data-precio="140"> 
+                        <div class="imagen-producto">
+                            <div class="img-shadow"><img src="images2/tul mosquetero tl3/rollos-de-tul-mosquetero-tl3.jpg"></div>
+                        </div>
+                        <div class="info-producto">
+                            <h3 class="titulo">Tul mosquitero TL3</h3>
+                            <p> Ideal para la fabricacion de mosquiteros o pabellones. Rollos con 50 mts y un ancho de 2.9mts.</p>
+                        </div>
+                    </div>
+
+                    <div class="tarjeta-producto" id="producto18" data-categoria="hola, hola4" data-precio="6"> 
+                        <div class="imagen-producto">
+                            <div class="img-shadow"><img src="images2/aguja-chaquira-eagle-caja.jpg"></div>
+                        </div>
+                        <div class="info-producto">
+                            <h3 class="titulo">Aguja chaquira eagle</h3>
+                            <p> Agujas finas, ideal para mostacilla y trabajos con busteria, caja con 5 millares "unico numero. 15" venta minima 5 millares</p>
+                        </div>
+                    </div>
+
+                    <div class="tarjeta-producto" id="producto19" data-categoria="hola, hola3" data-precio="15"> 
+                        <div class="imagen-producto">
+                            <div class="img-shadow"><img src="images2/alfiler-roseta.jpg"></div>
+                        </div>
+                        <div class="info-producto">
+                            <h3 class="titulo">Alfiler cabeza de perla</h3>
+                            <p>Utiliza en trabajos de costura y confección. cajita con 36 rosetas, venta minima 10 cajitas.</p>
+                        </div>
+                    </div>
+
+                    <div class="tarjeta-producto" id="producto20" data-categoria="hola3, hola4" data-precio="20"> 
+                        <div class="imagen-producto">
+                            <div class="img-shadow"><img src="images2/despitador-samjung.jpg"></div>
+                        </div>
+                        <div class="info-producto">
+                            <h3 class="titulo">Despitador Sam Jung</h3>
+                            <p> Utilizada en trabajos de costura y confeccion,  para cortar excedentes de hilo. cajita con 10 unidades, venta minima 10 cajitas</p>
+                        </div>
+                    </div>
+
+                    <div class="tarjeta-producto" id="producto21" data-categoria="hola" data-precio="18.50"> 
+                        <div class="imagen-producto">
+                            <div class="img-shadow"><img src="images/aguja apple/aguja-apple-09.jpg"></div>
+                        </div>
+                        <div class="info-producto">
+                            <h3 class="titulo">Aguja apple NO.9</h3>
+                            <p>Aguja para maquina de coser NO.9</p>
+                        </div>
+                    </div>
+
+                    <div class="tarjeta-producto" id="producto22" data-categoria="hola" data-precio="9.50"> 
+                        <div class="imagen-producto">
+                            <div class="img-shadow"><img src="images/aguja apple/aguja-apple-11.jpg"></div>
+                        </div>
+                        <div class="info-producto">
+                            <h3 class="titulo">Aguja apple NO.11</h3>
+                            <p>Aguja para maquina de coser NO.11</p>
+                        </div>
+                    </div>
+
+                    <div class="tarjeta-producto" id="producto23" data-categoria="hola" data-precio="10"> 
+                        <div class="imagen-producto">
+                            <div class="img-shadow"><img src="images/aguja apple/aguja-apple-14.jpg"></div>
+                        </div>
+                        <div class="info-producto">
+                            <h3 class="titulo">Aguja Apple NO.14</h3>
+                            <p>Aguja para maquina de coser NO.14</p>
+                        </div>
+                    </div>
+
+                    <div class="tarjeta-producto" id="producto24" data-categoria="hola" data-precio="11.50"> 
+                        <div class="imagen-producto">
+                            <div class="img-shadow"><img src="images/aguja apple/aguja-apple-16.jpg"></div>
+                        </div>
+                        <div class="info-producto">
+                            <h3 class="titulo"> Aguja apple NO.16</h3>
+                            <p>Aguja para maquina de coser NO.16</p>
+                        </div>
+                    </div>
+
+                    <div class="tarjeta-producto" id="producto25" data-categoria="hola" data-precio="12"> 
+                        <div class="imagen-producto">
+                            <div class="img-shadow"><img src="images/aguja apple/aguja-apple-18.jpg"></div>
+                        </div>
+                        <div class="info-producto">
+                            <h3 class="titulo">Aguja apple NO.18</h3>
+                            <p> Aguja para maquina de coser NO.18</p>
+                        </div>
+                    </div>
+
+                    <div class="tarjeta-producto" id="producto26" data-categoria="hola" data-precio="14"> 
+                        <div class="imagen-producto">
+                            <div class="img-shadow"><img src="images/aguja apple/aguja-apple-21.jpg"></div>
+                        </div>
+                        <div class="info-producto">
+                            <h3 class="titulo"> Aguja apple NO.21</h3>
+                            <p>Aguja para maquina de coser NO.21</p>
+                        </div>
+                    </div>
+
+                    <div class="tarjeta-producto" id="producto27" data-categoria="hola" data-precio="14.50"> 
+                        <div class="imagen-producto">
+                            <div class="img-shadow"><img src="images/aguja chaquira pony/aguja-chaquira-pony-no-10.jpg"></div>
+                        </div>
+                        <div class="info-producto">
+                            <h3 class="titulo">Aguja chaquira NO.10</h3>
+                            <p>Agujas finas ideal para busteria y morticillla NO.10</p>
+                        </div>
+                    </div>
+
+                    <div class="tarjeta-producto" id="producto28" data-categoria="hola" data-precio="14.50"> 
+                        <div class="imagen-producto">
+                            <div class="img-shadow"><img src="images/aguja chaquira pony/aguja-chaquira-pony-no-12.jpg"></div>
+                        </div>
+                        <div class="info-producto">
+                            <h3 class="titulo">Aguja chaquira NO.12</h3>
+                            <p> Agujas finas ideal para busteria y morticilla NO.12</p>
+                        </div>
+                    </div>
+
+                    
+                    <div class="tarjeta-producto" id="producto7" data-categoria="hola3, hola4" data-precio="58"> 
+                        <div class="imagen-producto">
+                            <div class="img-shadow"><img src="images/bastidores plastico con tornillo/bastidores-con-tornillo-2.jpg"></div>
+                        </div>
+                        <div class="info-producto">
+                            <h3 class="titulo">Bastidores de plastico con tornillo</h3>
+                            <p>Ideal para bordar y realizar manualidades. Juego con 6 unidades Tamaños 20cms(8"), 24cms(9"), 28.5cms(11"), venta minima 36 unidades.</p>
+                        </div>
+                    </div>
+
+                    <div class="tarjeta-producto" id="producto29" data-categoria="hola" data-precio="15.50"> 
+                        <div class="imagen-producto">
+                            <div class="img-shadow"><img src="images/aguja chaquira pony/aguja-chaquira-pony-no-15.jpg"></div>
+                        </div>
+                        <div class="info-producto">
+                            <h3 class="titulo">Aguja chaquira NO.15</h3>
+                            <p>Agujas finas ideal para busteria y morticcila NO.12</p>
+                        </div>
+                    </div>
+
+                    <div class="tarjeta-producto" id="producto30" data-categoria="hola,hola4" data-precio="17"> 
+                        <div class="imagen-producto">
+                            <div class="img-shadow"><img src="images/aguja circular/aguja-circular-2.5mm.jpg"></div>
+                        </div>
+                        <div class="info-producto">
+                            <h3 class="titulo">Aguja circular. Tamaño 2.5mm</h3>
+                            <p>Ideal para realizar tejidos. Tamaño: 2.5mm</p>
+                        </div>
+                    </div>
+
+                    
+                    <div class="tarjeta-producto" id="producto31" data-categoria="hola" data-precio="17"> 
+                        <div class="imagen-producto">
+                            <div class="img-shadow"><img src="images/aguja circular/aguja-circular-3.5mm.jpg"></div>
+                        </div>
+                        <div class="info-producto">
+                            <h3 class="titulo">Aguja circular Tamaño 3.5mm</h3>
+                            <p>Ideal para realizar tejidos. Tamaño:3.5mm</p>
+                        </div>
+                    </div>
+
+                    <div class="tarjeta-producto" id="producto32" data-categoria="hola" data-precio="18"> 
+                        <div class="imagen-producto">
+                            <div class="img-shadow"><img src="images/aguja circular/aguja-circular-3mm.jpg"></div>
+                        </div>
+                        <div class="info-producto">
+                            <h3 class="titulo">Aguja circular Tamaño 3mm</h3>
+                            <p>Ideal para realizar tejidos. Tamaño: 3mm</p>
+                        </div>
+                    </div>
+
+                    <div class="tarjeta-producto" id="producto33" data-categoria="hola" data-precio="18"> 
+                        <div class="imagen-producto">
+                            <div class="img-shadow"><img src="images/aguja circular/aguja-circular-4.5mm.jpg"></div>
+                        </div>
+                        <div class="info-producto">
+                            <h3 class="titulo">Aguja circular Tamaño 4.5mm</h3>
+                            <p>Ideal para realizar tejidos. Tamaño: 4.5mm</p>
+                        </div>
+                    </div>
+
+                    <div class="tarjeta-producto" id="producto34" data-categoria="hola" data-precio="25.5"> 
+                        <div class="imagen-producto">
+                            <div class="img-shadow"><img src="images/aguja circular/aguja-circular-4mm.jpg"></div>
+                        </div>
+                        <div class="info-producto">
+                            <h3 class="titulo">Aguja circular Tamaño 4mm</h3>
+                            <p>Ideal para reealizar tejidos. Tamaño: 4mm</p>
+                        </div>
+                    </div>
+
+                    <div class="tarjeta-producto" id="producto35" data-categoria="hola" data-precio="25.5"> 
+                        <div class="imagen-producto">
+                            <div class="img-shadow"><img src="images/aguja circular/aguja-circular-5mm.jpg"></div>
+                        </div>
+                        <div class="info-producto">
+                            <h3 class="titulo">Aguja circular Tamaño:5mm</h3>
+                            <p>Ideal para realizar tejidos. Tamaño:5mm</p>
+                        </div>
+                    </div>
+
+                    <div class="tarjeta-producto" id="producto36" data-categoria="hola" data-precio="25.5"> 
+                        <div class="imagen-producto">
+                            <div class="img-shadow"><img src="images/aguja circular/aguja-circular-6mm.jpg"></div>
+                        </div>
+                        <div class="info-producto">
+                            <h3 class="titulo">Aguja circular Tamaño 6mm</h3>
+                            <p>Ideal para realizar tejidos. Tamaño: 6mm</p>
+                        </div>
+                    </div>
+
+                    <div class="tarjeta-producto" id="producto37" data-categoria="hola,hola2" data-precio="50"> 
+                        <div class="imagen-producto">
+                            <div class="img-shadow"><img src="images/aguja crochet/aguja-crochet-0.jpg"></div>
+                        </div>
+                        <div class="info-producto">
+                            <h3 class="titulo">Aguja crochet NO.0</h3>
+                            <p>Ideal para realizar tejidos  de diferentes prendas NO.0</p>
+                        </div>
+                    </div>
+
+                    <div class="tarjeta-producto" id="producto38" data-categoria="hola,hola2" data-precio="50"> 
+                        <div class="imagen-producto">
+                            <div class="img-shadow"><img src="images/aguja crochet/aguja-crochet-2.jpg"></div>
+                        </div>
+                        <div class="info-producto">
+                            <h3 class="titulo">Aguja crochet NO.2</h3>
+                            <p>Ideal para realizar tejidos de diferentes prendas NO.2</p>
+                        </div>
+                    </div>
+
+                    <div class="tarjeta-producto" id="producto39" data-categoria="hola,hola2" data-precio="50"> 
+                        <div class="imagen-producto">
+                            <div class="img-shadow"><img src="images/aguja crochet/aguja-crochet-4.jpg"></div>
+                        </div>
+                        <div class="info-producto">
+                            <h3 class="titulo">Aguja crochet NO.4</h3>
+                            <p>Ideal para realizar tejidos de diferentes prendas NO.4</p>
+                        </div>
+                    </div>
+
+                    <div class="tarjeta-producto" id="producto40" data-categoria="hola,hola2" data-precio="50"> 
+                        <div class="imagen-producto">
+                            <div class="imagen-shadow"><img src="images/aguja crochet/aguja-crochet-6.jpg"></div>
+                        </div>
+                        <div class="info-producto">
+                            <h3 class="titulo">Aguja crochet NO.6</h3>
+                            <p>Ideal para realizar tejidos de diferentess prentas NO.6</p>
+                        </div>
+                    </div>
+
+                    
+                    <div class="tarjeta-producto" id="producto41" data-categoria="hola,hola2" data-precio="50"> 
+                        <div class="imagen-producto">
+                            <div class="img-shadow"><img src="images/aguja crochet/aguja-crochet-8.jpg"></div>
+                        </div>
+                        <div class="info-producto">
+                            <h3 class="titulo">Aguja crochet NO.8</h3>
+                            <p>Ideal para realizar tejidos de diferentes prendas NO.8</p>
+                        </div>
+                    </div>
+
+                    <div class="tarjeta-producto" id="producto42" data-categoria="hola,hola2" data-precio="50"> 
+                        <div class="imagen-producto">
+                            <div class="imagen-shadow"><img src="images/aguja crochet/aguja-crochet-10.jpg"></div>
+                        </div>
+                        <div class="info-producto">
+                            <h3 class="titulo">Aguja crochet NO.10</h3>
+                            <p>Ideal para realizar tejidos de diferentes prendas NO.10</p>
+                        </div>
+                    </div>
+
+                    <div class="tarjeta-producto" id="producto43" data-categoria="hola" data-precio="18.50"> 
+                        <div class="imagen-producto">
+                            <div class="imagen-shadow"><img src="images/aguja singer blister de 10/aguja-singer-no-10-blister-de-10.jpg"></div>
+                        </div>
+                        <div class="info-producto">
+                            <h3 class="titulo">Aguja singer NO.10</h3>
+                            <p>Aguja para maquina de coser, cabo dorado de exelente calidad NO.10</p>
+                        </div>
+                    </div>
+
+                    <div class="tarjeta-producto" id="producto44" data-categoria="hola" data-precio="18.50"> 
+                        <div class="imagen-producto">
+                            <div class="img-shadow"><img src="images/aguja singer blister de 10/aguja-singer-no12-blister-de-10.jpg"></div>
+                        </div>
+                        <div class="info-producto">
+                            <h3 class="titulo">Aguja singer NO.12</h3>
+                            <p>Aguja para maquina de coser, cabo dorado de exelente calidad NO.12</p>
+                        </div>
+                    </div>
+
+                    <div class="tarjeta-producto" id="producto45" data-categoria="hola" data-precio="18.50"> 
+                        <div class="imagen-producto">
+                            <div class="img-shadow"><img src="images/aguja singer blister de 10/aguja-singer-no14-blister-de-10.jpg"></div>
+                        </div>
+                        <div class="info-producto">
+                            <h3 class="titulo">Aguja singer NO.14</h3>
+                            <p>Aguja para maquina de coser, cabo  dorado de exelente calidad NO.14</p>
+                        </div>
+                    </div>
+
+                    <div class="tarjeta-producto" id="producto46" data-categoria="hola" data-precio="18.50"> 
+                        <div class="imagen-producto">
+                            <div class="img-shadow"><img src="images/aguja singer blister de 10/aguja-singer-no16-blister-de-10.jpg"></div>
+                        </div>
+                        <div class="info-producto">
+                            <h3 class="titulo">Aguja singer No.16</h3>
+                            <p>Aguja para maquina de coser, cabo dorado de exelente calidad NO.16</p>
+                        </div>
+                    </div>
+
+                    <div class="tarjeta-producto" id="producto47" data-categoria="hola" data-precio="18.50"> 
+                        <div class="imagen-producto">
+                            <div class="img-shadow"><img src="images/aguja singer blister de 10/aguja-singer-no-18-blister-de-10.jpg"></div>
+                        </div>
+                        <div class="info-producto">
+                            <h3 class="titulo">Aguja singer No.18</h3>
+                            <p>Aguja para maquina de coser, cabo dorado de exelente calidad No.18</p>
+                        </div>
+                    </div>
+
+                    <div class="tarjeta-producto" id="producto48" data-categoria="hola" data-precio="18.50"> 
+                        <div class="imagen-producto">
+                            <div class="img-shadow"><img src="images/aguja singer blister de 10/aguja-singer-no-21-blister-de-10.jpg"></div>
+                        </div>
+                        <div class="info-producto">
+                            <h3 class="titulo">Aguja singer No.21</h3>
+                            <p>Aguja para mquina de coser, cabo dorado de exlente calidad No.21</p>
+                        </div>
+                    </div>
+
+                    <div class="tarjeta-producto" id="producto49" data-categoria="hola" data-precio="30"> 
+                        <div class="imagen-producto">
+                            <div class="img-shadow"><img src="images/agujas de crochet aluminio/aguja-crochet-aluminio-2.5mm.jpg"></div>
+                        </div>
+                        <div class="info-producto">
+                            <h3 class="titulo">Aguja crochet de aluminio </h3>
+                            <p>Ideal para realizar tejidos y manualidades Tamaño 2.5mm</p>
+                        </div>
+                    </div>
+
+                    <div class="tarjeta-producto" id="producto50" data-categoria="hola,hola2" data-precio="30"> 
+                        <div class="imagen-producto">
+                            <div class="img-shadow"><img src="images/agujas de crochet aluminio/agujas-crochet-aluminio-3.0mm.jpg"></div>
+                        </div>
+                        <div class="info-producto">
+                            <h3 class="titulo">Aguja crochet de aluminio</h3>
+                            <p>Ideal para realizar tejidos y manualidades Tamaño 3.0mm</p>
+                        </div>
+                    </div>
+
+                    <div class="tarjeta-producto" id="producto51" data-categoria="hola,hola2" data-precio="30"> 
+                        <div class="imagen-producto">
+                            <div class="img-shadow"><img src="images/agujas de crochet aluminio/agujas-crochet-aluminio-3.5mm.jpg"></div>
+                        </div>
+                        <div class="info-producto">
+                            <h3 class="titulo">Aguja crochet de aluminio</h3>
+                            <p>Ideal para realizar tejidos y manualidades Tamaño 3.5mm</p>
+                        </div>
+                    </div>
+
+                    <div class="tarjeta-producto" id="producto52" data-categoria="hola,hola2" data-precio="30"> 
+                        <div class="imagen-producto">
+                            <div class="img-shadow"><img src="images/agujas de crochet aluminio/agujas-crochet-aluminio-4.0mm.jpg"></div>
+                        </div>
+                        <div class="info-producto">
+                            <h3 class="titulo">Aguja crochet de aluminio</h3>
+                            <p>Ideal para realizar tejidos y manualidades Tamaño 4mm</p>
+                        </div>
+                    </div>
+
+                    <div class="tarjeta-producto" id="producto53" data-categoria="hola,hola2" data-precio="30"> 
+                        <div class="imagen-producto">
+                            <div class="img-shadow"><img src="images/agujas de crochet aluminio/agujas-crochet-aluminio-4.5mm.jpg"></div>
+                        </div>
+                        <div class="info-producto">
+                            <h3 class="titulo">Aguja crochet de aluminio</h3>
+                            <p>Ideal para realizar tejidos y manualidades tamaño 4.5mm</p>
+                        </div>
+                    </div>
+
+                    <div class="tarjeta-producto" id="producto54" data-categoria="hola3" data-precio="58"> 
+                        <div class="imagen-producto">
+                            <div class="img"><img src="images/bastidores plastico con tornillo/bastidor-plastico-16cms.jpg"></div>
+                        </div>
+                        <div class="info-producto">
+                            <h3 class="titulo">Bastidores de plastico con tornillo</h3>
+                            <p>Ideal para bordar y realizar manualidades Tamaño 16cms</p>
+                        </div>
+                    </div>
+
+                    <div class="tarjeta-producto" id="producto55" data-categoria="hola3" data-precio="58"> 
+                        <div class="imagen-producto">
+                            <div class="img-shadow"><img src="images/bastidores plastico con tornillo/bastidor-plastico-con-tornillo-20cms.jpg"></div>
+                        </div>
+                        <div class="info-producto">
+                            <h3 class="titulo">Bastidores de plastico con tornillo</h3>
+                            <p>Ideal para bordar y realizar manualidades Tamaño 20cms</p>
+                        </div>
+                    </div>
+
+                    <div class="tarjeta-producto" id="producto56" data-categoria="hola3" data-precio="58"> 
+                        <div class="imagen-producto">
+                            <div class="img-shadow"><img src="images/bastidores plastico con tornillo/bastidor-plastico-24-cms.jpg"></div>
+                        </div>
+                        <div class="info-producto">
+                            <h3 class="titulo">Bastidores de plastico con tornillo</h3>
+                            <p>Ideal para bordar y realizar manualidades Tamaño 24cms</p>
+                        </div>
+                    </div>
+
+                    <div class="tarjeta-producto" id="producto57" data-categoria="hola3" data-precio="58"> 
+                        <div class="imagen-producto">
+                            <div class="img-shadow"><img src="images/bastidores plastico con tornillo/bastidor-plastico-28.5-cms.jpg"></div>
+                        </div>
+                        <div class="info-producto">
+                            <h3 class="titulo">bastidores de plastico con tornillo</h3>
+                            <p>Ideal para bordar y realizar manualidades tamaño 28.5cms</p>
+                        </div>
+                    </div>
+
+                    <div class="tarjeta-producto" id="producto58" data-categoria="hola4" data-precio="15"> 
+                        <div class="imagen-producto">
+                            <div class="img-shadow"><img src="images/Elastico trenzado Negro/elastico-trenzado-negro-5mm.jpg"></div>
+                        </div>
+                        <div class="info-producto">
+                            <h3 class="titulo">Elastico trenzado</h3>
+                            <p>Elastico trenzado de exelente calidad  en color negro Tamaño 5mm</p>
+                        </div>
+                    </div>
+
+                    <div class="tarjeta-producto" id="producto59" data-categoria="hola4" data-precio="15"> 
+                        <div class="imagen-producto">
+                            <div class="img-shadow"><img src="images/Elastico trenzado Negro/elastico-trenzado-negro-6mm.jpg"></div>
+                        </div>
+                        <div class="info-producto">
+                            <h3 class="titulo">Elastico trenzado </h3>
+                            <p>Elastico trenzado de exelente calidad en color negro tamaño 6mm</p>
+                        </div>
+                    </div>
+
+                    <div class="tarjeta-producto" id="producto9" data-categoria="hola4" data-precio="60"> 
+                        <div class="imagen-producto">
+                            <div class="img-shadow"><img src="images/encaje plisado ps023/encaje-plisado-ps-023-fusia.jpg"></div>
+                        </div>
+                        <div class="info-producto">
+                            <h3 class="titulo">Encaje plisado V-2444</h3>
+                            <p>Ideal para decoracion de costuras y manualidades. Ancho 2cms."diferentes colores"</p>
+                        </div>
+                    </div>
+
+                    <div class="tarjeta-producto" id="producto10" data-categoria="hola5" data-precio="20"> 
+                        <div class="imagen-producto">
+                            <div class="img-shadow"><img src="images/estambres lisos/gala-liso-.jpg"></div>
+                        </div>
+                        <div class="info-producto">
+                            <h3 class="titulo">Estambre liso "Lana"</h3>
+                            <p>Ideal para vestuario y manualidades. Diferentes colores disponibles con ovillos de 100kg</p>
+                        </div>
+                    </div>
+
+                    <div class="tarjeta-producto" id="producto60" data-categoria="hola4" data-precio="15"> 
+                        <div class="imagen-producto">
+                            <div class="imagen-shadow"><img src="images/Elastico trenzado Negro/elastico-trenzado-negro-10mm.jpg"></div>
+                        </div>
+                        <div class="info-producto">
+                            <h3 class="titulo">Elastico trenzado</h3>
+                            <p>Elastico trenzado de exelente calidad en color negro Tamaño 10mm</p>
+                        </div>
+                    </div>
+                    
+                    <div class="tarjeta-producto" id="producto61" data-categoria="hola4" data-precio="15"> 
+                        <div class="imagen-producto">
+                            <div class="imagen-shadow"><img src="images/Elastico trenzado Negro/elastico-trenzado-negro-12mm.jpg"></div>
+                        </div>
+                        <div class="info-producto">
+                            <h3 class="titulo">Elastico trezado</h3>
+                            <p>Elastico trenzado de exelente calidad en color negro Tamaño 12mm</p>
+                        </div>
+                    </div>
+                    
+                    <div class="tarjeta-producto" id="producto62" data-categoria="hola4" data-precio="60"> 
+                        <div class="imagen-producto">
+                            <div class="imagen-shadow"><img src="images/encaje plisado ps023/encaje-plisado-ps-023-verde-limon.jpg"></div>
+                        </div>
+                        <div class="info-producto">
+                            <h3 class="titulo">Encaje plisado</h3>
+                            <p>Ideal para decoracion  de costuras y manualidades color: verde limon</p>
+                        </div>
+                    </div>
+                    
+                    <div class="tarjeta-producto" id="producto64" data-categoria="hola4" data-precio="60"> 
+                        <div class="imagen-producto">
+                            <div class="imagen-shadow"><img src="images/encaje plisado ps023/encaje-plisado-ps023-celeste.jpg"></div>
+                        </div>
+                        <div class="info-producto">
+                            <h3 class="titulo">Encaje plisado</h3>
+                            <p>Ideal para decoracion de costuras y manualidades color: celeste </p>
+                        </div>
+                    </div>
+                    
+                    <div class="tarjeta-producto" id="producto65" data-categoria="hola4" data-precio="60"> 
+                        <div class="imagen-producto">
+                            <div class="imagen-shadow"><img src="images/encaje plisado ps023/encaje-plisado-ps023-naranja.jpg"></div>
+                        </div>
+                        <div class="info-producto">
+                            <h3 class="titulo">Encaje plisado</h3>
+                            <p>Ideal para decoracion de costuras y manualidades color: naranja</p>
+                        </div>
+                    </div>
+                    
+                    <div class="tarjeta-producto" id="producto66" data-categoria="hola4" data-precio="60"> 
+                        <div class="imagen-producto">
+                            <div class="imagen-shadow"><img src="images/encaje plisado ps023/encaje-plisado-ps023-rosa.jpg"></div>
+                        </div>
+                        <div class="info-producto">
+                            <h3 class="titulo">Encaje plisado</h3>
+                            <p>Ideal para decoracion de costuras y manualidades  color: rosa</p>
+                        </div>
+                    </div>
+                    
+                    <div class="tarjeta-producto" id="producto67" data-categoria="hola5" data-precio="20"> 
+                        <div class="imagen-producto">
+                            <div class="imagen-shadow"><img src="images/estambres lisos/estambre-gala-liso-no-1.jpg"></div>
+                        </div>
+                        <div class="info-producto">
+                            <h3 class="titulo">Estambres gala</h3>
+                            <p>Ideal para vestuario y diferentes colores No.1</p>
+                        </div>
+                    </div>
+                    
+                    <div class="tarjeta-producto" id="producto68" data-categoria="hola5" data-precio="20"> 
+                        <div class="imagen-producto">
+                            <div class="imagen-shadow"><img src="images/estambres lisos/estambre-gala-liso-no-3.jpg"></div>
+                        </div>
+                        <div class="info-producto">
+                            <h3 class="titulo">Estambres gala</h3>
+                            <p>Ideal para vestuario y diferentes manualidades No.3</p>
+                        </div>
+                    </div>
+                    
+                    <div class="tarjeta-producto" id="producto69" data-categoria="hola5" data-precio="20"> 
+                        <div class="imagen-producto">
+                            <div class="imagen-shadow"><img src="images/estambres lisos/estambre-gala-liso-no-4.jpg"></div>
+                        </div>
+                        <div class="info-producto">
+                            <h3 class="titulo">Estambres gala</h3>
+                            <p>Ideal para vestuario y diferentes manualidades</p>
+                        </div>
+                    </div>
+                    
+                    <div class="tarjeta-producto" id="producto70" data-categoria="hola5" data-precio="20"> 
+                        <div class="imagen-producto">
+                            <div class="imagen-shadow"><img src="images/estambres lisos/estambre-gala-liso-no-10.jpg"></div>
+                        </div>
+                        <div class="info-producto">
+                            <h3 class="titulo">Estambres gala</h3>
+                            <p>Ideal para vestuario y diferentes manualidades</p>
+                        </div>
+                    </div>
+                    
+                    <div class="tarjeta-producto" id="producto71" data-categoria="hola5" data-precio="20"> 
+                        <div class="imagen-producto">
+                            <div class="imagen-shadow"><img src="images/estambres lisos/estambre-gala-liso-no-12.jpg"></div>
+                        </div>
+                        <div class="info-producto">
+                            <h3 class="titulo">Estambres gala</h3>
+                            <p>Ideal para vestuario y diferentes manualidades</p>
+                        </div>
+                    </div>
+
+
+                    <div class="tarjeta-producto" id="producto72" data-categoria="hola7" data-precio="18"> 
+                        <div class="imagen-producto">
+                            <div class="imagen-shadow"><img src="images2/Rafia toyo/rafia-toyo-amarillo-canario-no-4.jpg"></div>
+                        </div>
+                        <div class="info-producto">
+                            <h3 class="titulo">Rafia toyo</h3>
+                            <p>Utilizada en trabajos de manualidades y decorativos color: amarillo canario </p>
+                        </div>
+                    </div>
+
+
+                    <div class="tarjeta-producto" id="producto73" data-categoria="hola7" data-precio="18"> 
+                        <div class="imagen-producto">
+                            <div class="imagen-shadow"><img src="images2/Rafia toyo/rafia-toyo-azul-fuerte-no13.jpg"></div>
+                        </div>
+                        <div class="info-producto">
+                            <h3 class="titulo">Rafia toyo</h3>
+                            <p>Utilizada en trabajos de manualidades y decorativos color: azul fuerte</p>
+                        </div>
+                    </div>
+                    
+
+                    <div class="tarjeta-producto" id="producto74" data-categoria="hola7" data-precio="18"> 
+                        <div class="imagen-producto">
+                            <div class="imagen-shadow"><img src="images2/Rafia toyo/rafia-toyo-azul-marino-no13b.jpg"></div>
+                        </div>
+                        <div class="info-producto">
+                            <h3 class="titulo">Rafia toyo</h3>
+                            <p>utilizada en trbajos de manualidades y decorativos color: azul marino</p>
+                        </div>
+                    </div>
+                    
+                    <div class="tarjeta-producto" id="producto75" data-categoria="hola7" data-precio="18"> 
+                        <div class="imagen-producto">
+                            <div class="imagen-shadow"><img src="images2/Rafia toyo/rafia-toyo-lila-no15.jpg"></div>
+                        </div>
+                        <div class="info-producto">
+                            <h3 class="titulo">Rafia toyo</h3>
+                            <p>Utilizada en trabajos de manualidades y decorativos color: Lila</p>
+                        </div>
+                    </div>
+                    
+                    <div class="tarjeta-producto" id="producto76" data-categoria="hola7" data-precio="18"> 
+                        <div class="imagen-producto">
+                            <div class="imagen-shadow"><img src="images2/Rafia toyo/rafia-toyo-rojo-no8.jpg"></div>
+                        </div>
+                        <div class="info-producto">
+                            <h3 class="titulo">Rafia toyo</h3>
+                            <p>Utilizada en trabajos de manualidades y decoracion</p>
+                        </div>
+                    </div>
+                    
+                    <div class="tarjeta-producto" id="producto77" data-categoria="hola3" data-precio="80"> 
+                        <div class="imagen-producto">
+                            <div class="imagen-shadow"><img src="images2/tijeras mundial/tijera-mundial-metal-no8.jpg"></div>
+                        </div>
+                        <div class="info-producto">
+                            <h3 class="titulo">Tijera mundial </h3>
+                            <p>Tijera para sastre y mudista de exelente calidad No.8</p>
+                        </div>
+                    </div>
+                    
+                    <div class="tarjeta-producto" id="producto78" data-categoria="hola3" data-precio="80"> 
+                        <div class="imagen-producto">
+                            <div class="imagen-shadow"><img src="images2/tijeras mundial/tijera-mundial-metal-no9.jpg"></div>
+                        </div>
+                        <div class="info-producto">
+                            <h3 class="titulo">Tijera mundial</h3>
+                            <p>Tijera para sastre y mudista de exelente calidad No.9</p>
+                        </div>
+                    </div>
+                    
+                    <div class="tarjeta-producto" id="producto79" data-categoria="hola3" data-precio="80"> 
+                        <div class="imagen-producto">
+                            <div class="imagen-shadow"><img src="images2/tijeras mundial/tijera-mundial-de-metal-no10.jpg"></div>
+                        </div>
+                        <div class="info-producto">
+                            <h3 class="titulo">Tijera mundial</h3>
+                            <p>Tijera para sastre y mudista de exelente calidad No.10</p>
+                        </div>
+                    </div>
+                    
+                    <div class="tarjeta-producto" id="producto80" data-categoria="hola4" data-precio="150"> 
+                        <div class="imagen-producto">
+                            <div class="imagen-shadow"><img src="images2/tul diamantina/tul-diamantina-blanco.jpg"></div>
+                        </div>
+                        <div class="info-producto">
+                            <h3 class="titulo">Tul diamantina</h3>
+                            <p>Ideal para la elaboracion de vestidos y manualidades color:Blanco</p>
+                        </div>
+                    </div>
+                    
+                    <div class="tarjeta-producto" id="producto81" data-categoria="hola4" data-precio="150"> 
+                        <div class="imagen-producto">
+                            <div class="imagen-shadow"><img src="images2/tul diamantina/tul-diamantina-coral.jpg"></div>
+                        </div>
+                        <div class="info-producto">
+                            <h3 class="titulo">Tul dimantina</h3>
+                            <p>Ideal para la elaboracion de vestidos y manualidades color:Coral</p>
+                        </div>
+                    </div>
+                    
+                    <div class="tarjeta-producto" id="producto82" data-categoria="hola4" data-precio="150"> 
+                        <div class="imagen-producto">
+                            <div class="imagen-shadow"><img src="images2/tul diamantina/tul-diamantina-morado.jpg"></div>
+                        </div>
+                        <div class="info-producto">
+                            <h3 class="titulo">Tul diamantina</h3>
+                            <p>Ideal para la elaboracion de vestidos y manualidades color:morado</p>
+                        </div>
+                    </div>
+                    
+                    <div class="tarjeta-producto" id="producto83" data-categoria="hola4" data-precio="150"> 
+                        <div class="imagen-producto">
+                            <div class="imagen-shadow"><img src="images2/tul diamantina/tul-diamantina-negro.jpg"></div>
+                        </div>
+                        <div class="info-producto">
+                            <h3 class="titulo">Tul diamantina</h3>
+                            <p>Ideal para la elaboracion de vestidos y manuallidades color:Negro</p>
+                        </div>
+                    </div>
+                    
+                    <div class="tarjeta-producto" id="producto84" data-categoria="hola4" data-precio="150"> 
+                        <div class="imagen-producto">
+                            <div class="imagen-shadow"><img src="images2/tul diamantina/tul-diamantina-verde-limon.jpg"></div>
+                        </div>
+                        <div class="info-producto">
+                            <h3 class="titulo">Tul diamantina</h3>
+                            <p>Ideal para la elaboracion de vestidos y manualidades color:Verde limon</p>
+                        </div>
+                    </div>
+                    
+                    <div class="tarjeta-producto" id="producto85" data-categoria="hola4" data-precio="100"> 
+                        <div class="imagen-producto">
+                            <div class="imagen-shadow"><img src="images2/tul doble ancho/tul-doble-ancho-azul-cielo.jpg"></div>
+                        </div>
+                        <div class="info-producto">
+                            <h3 class="titulo">Tul doble ancho</h3>
+                            <p>Tul con acabado firme y con varios usos color: Azul cielo</p>
+                        </div>
+                    </div>
+                    
+                    <div class="tarjeta-producto" id="producto86" data-categoria="hola4" data-precio="100"> 
+                        <div class="imagen-producto">
+                            <div class="imagen-shadow"><img src="images2/tul doble ancho/tul-doble-ancho-lila.jpg"></div>
+                        </div>
+                        <div class="info-producto">
+                            <h3 class="titulo">Tul doble ancho</h3>
+                            <p>Tul con acabado firme y con varios usos color: Lila</p>
+                        </div>
+                    </div>
+                    
+                    <div class="tarjeta-producto" id="producto87" data-categoria="hola4" data-precio="100"> 
+                        <div class="imagen-producto">
+                            <div class="imagen-shadow"><img src="images2/tul doble ancho/tul-doble-ancho-marfil.jpg"></div>
+                        </div>
+                        <div class="info-producto">
+                            <h3 class="titulo">Tul doble ancho</h3>
+                            <p>Tul con acabado firme y con varios usos color:Marfil</p>
+                        </div>
+                    </div>
+                    
+                    <div class="tarjeta-producto" id="producto88" data-categoria="hola4" data-precio="100"> 
+                        <div class="imagen-producto">
+                            <div class="imagen-shadow"><img src="images2/tul doble ancho/tul-doble-ancho-rosa.jpg"></div>
+                        </div>
+                        <div class="info-producto">
+                            <h3 class="titulo">Tul doble ancho</h3>
+                            <p>Tul con acabado firme y con varios usos color:Rosa</p>
+                        </div>
+                    </div>
+                    
+                    <div class="tarjeta-producto" id="producto89" data-categoria="hola4" data-precio="140"> 
+                        <div class="imagen-producto">
+                            <div class="imagen-shadow"><img src="images2/tul mosquetero tl3/tul-mosquetero-tl3-blanco-.jpg"></div>
+                        </div>
+                        <div class="info-producto">
+                            <h3 class="titulo">Tul mosquitero TL3</h3>
+                            <p>Ideal para la fabricacion  de mosquiteros o pabellones color:Blanco </p>
+                        </div>
+                    </div>
+                    
+                    <div class="tarjeta-producto" id="producto90" data-categoria="hola4" data-precio="140"> 
+                        <div class="imagen-producto">
+                            <div class="imagen-shadow"><img src="images2/tul mosquetero tl3/tul-mosquetero-tl3-rojo.jpg"></div>
+                        </div>
+                        <div class="info-producto">
+                            <h3 class="titulo">Tul mosquitero TL3</h3>
+                            <p> Ideal para la fabricacion de mosquiteros o pabellones color:Rojo</p>
+                        </div>
+                    </div>
+                    
+                    <div class="tarjeta-producto" id="producto91" data-categoria="hola4" data-precio="140"> 
+                        <div class="imagen-producto">
+                            <div class="imagen-shadow"><img src="images2/tul mosquetero tl3/tul-mosquitero-tl3-fusia.jpg"></div>
+                        </div>
+                        <div class="info-producto">
+                            <h3 class="titulo">Tul mosquitero TL3</h3>
+                            <p> Ideal para la fabricacion de mosquiteros o pabellones color:Fusia</p>
+                        </div>
+                    </div>
+                    
+                    <div class="tarjeta-producto" id="producto92" data-categoria="" data-precio="140"> 
+                        <div class="imagen-producto">
+                            <div class="imagen-shadow"><img src="images2/tul mosquetero tl3/tul-mosquitero-tl3-turquesa.jpg"></div>
+                        </div>
+                        <div class="info-producto">
+                            <h3 class="titulo">Tul mosquitero TL3</h3>
+                            <p>Ideal para la fabricacion de mosquiteros o pabellones color:Turquesa</p>
+                        </div>
+                    </div>
+                    
+                    
+                    <div class="tarjeta-producto" id="producto5" data-categoria="hola2" data-precio="30">
+                        <div class="imagen-producto">
+                            <div class="img-shadow"><img src="images/agujas de crochet aluminio/agujas-de-crochet-aluminio-2.jpg"></div>
+                        </div>
+                        <div class="info-producto">
+                            <h3 class="titulo">Aguja crochet de aluminio<h3>
+                            <p> Ideal para realizar tejidos y manualidades. "el color de aguja es aleatorio".Numeros:2.5mm,3.0mm.
+                                3,5mm, 4.0mm,4.5mm, venta minima 100pzs</p>
+                        </div>
+                    </div>
+
+                    <div class="tarjeta-producto" id="producto6" data-categoria="hola2" data-precio="35"> 
+                        <div class="imagen-producto">
+                            <div class="img-shadow"><img src="images/Agujas de crochet con Mango/set-aguja-crochet-con-mango-2-.jpg"></div>
+                        </div>
+                        <div class="info-producto">
+                            <h3 class="titulo">Aguja crochet con mago de goma</h3>
+                            <p> Mango erfonomico. Bolsa con 11 agujas de difentes tamaños.Tamaños 2mm, 2.5mm,3.5mm,4mm, 4.5mm. venta minima 5 bolsas</p>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <div class="mostrarMas">
+                    <button id="btn-mas" class="btn-mostrar-mas">Mostrar todos ▼</button>
+                </div>
+
+
+
+
+                <div class="modal-fondo" id="modalCompra">
+                    <div class="modal">
+                        <div class="represmodal" style="margin-right: 30px;">
+                        <h3 id="modalNombre"></h3>
+                        <img id="modalImg" src="" style="margin: auto">
+                        </div>
+                        <div style="display: inline-block; margin-top: 1em;"><p id="modalPrecio"></p>
+
+                            <label class="modalanti">Cantidad:</label>
+                            <select name="compracant" id="compraCantidad">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="custom">+10</option>
+                            </select>
+                            <input type="number" id="cantidadPersonalizada" placeholder="11" maxlength="15" style="display:none; margin-top:10px;"></input>
+                                    
+                            <h4></h4>
+                            <div class="variantes" id="listaVariantes" style="transition: 0.3s ease;"></div>
+                        
+
+                        
+                            <div class="modalsbuttons">
+                                <button class="btn-cerrar" id="cerrarModal">Cerrar</button>
+                                <button class="btn btnmdl-carrito" id="btnAgregarCarrito">Añadir al Carrito</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>            
+
+                <!--=========================
+                    carrito de compras
+                ===========================-->
+                <button id="btnCarrito" class="btn-carrito">🛒</button>
+                <div id="carrito-overlay" class="carrito-overlay"></div>
+                <div id="carrito-panel" class="carrito-panel">
+                    <div class="carrito-header">
+                        <h2>Tu Carrito</h2>
+                        <button id="cerrarCarrito" class="cerrar-icon">✕</button>
+                    </div>
+                    <div id="carrito-items" class="carrito-items"></div>
+                    <div class="carrito-footer">
+                        <p>Total: <span id="carrito-total">Q0.00</span></p>
+
+                            <a href="php/formcompra.html"><button class="carrito-pagar" onclick="redireccionar()">Pagar</button></a>
+                    </div>
+                </div>
+                </section>
+
+    <!-- =========================
+    FOOTER
+    ========================= -->
+    <footer id="footer">
+        <div class="contenedor contenido-footer">
+            <p>&copy; 2023 DGH Distribuidora Hermanos García. Todos los derechos reservados.</p>
+            <div class="enlaces-sociales">
+                <a href="#">Facebook</a>
+                <a href="#">Instagram</a>
+                <a href="#">WhatsApp</a>
+            </div>
+        </div>
+    </footer> 
+
+    <script>
+        function redireccionar() {
+        window.location.href = "formcompra.html";
+        }
+    </script>
+    <script src="JS/00-menu.js"></script>
+    <script src="JS/02-carritoCompras.js"></script>
+    <script src="JS/03-perszldcantCompra"></script>
+    <script src="JS/04-searchfilter.js"></script>
+    <script src="JS/05-mostrartodo.js"> </script>
+    <script src="JS/01-modalproducts.js"></script>
+    <script src="JS/06-menuconection.js"></script>
+    
+</body>
+</html>
